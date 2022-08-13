@@ -7,6 +7,7 @@ body {
   padding: 20 0 20 0;
   margin-left: auto;
   margin-right: auto;
+  background-size: auto;
 }
 .background {
   left: 50%;
@@ -75,8 +76,46 @@ body {
   width: 100%;
   height: auto;
   margin-top: 10px;
-  background-size: contain;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 h1 {
   font-weight: 500;
+}
+.ranking {
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.ranking thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.ranking th,
+.ranking td {
+  padding: 12px 15px;
+}
+
+.ranking tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.ranking tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.ranking tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.ranking tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
 }
