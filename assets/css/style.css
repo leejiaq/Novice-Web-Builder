@@ -1,5 +1,6 @@
 * {
   border: 0;
+  scroll-behavior: smooth;
 }
 body {
   max-width: 80%;
@@ -77,6 +78,7 @@ body {
   height: auto;
   margin-top: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 h1 {
   font-weight: 500;
@@ -118,4 +120,37 @@ h1 {
 .ranking tbody tr.active-row {
   font-weight: bold;
   color: #009879;
+}
+nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: full;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+nav > a {
+  text-decoration: underline #ffffff00;
+  text-underline-offset: 0px;
+  color: #06958c;
+  font-size: 16px;
+      animation-duration: 450ms;
+}
+nav > a:hover {
+    text-decoration: underline #09947885;
+    text-underline-offset: 3px;
+}
+#pengenalan {
+  scroll-margin: 20px;
+}
+.top {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 10px;
+  right: 140px;
+  cursor: pointer;
+  z-index: 9!important;
 }
