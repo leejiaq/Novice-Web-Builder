@@ -33,7 +33,7 @@ body {
   z-index: -1;
 }
 .background-1 {
-  position: absolute;
+  position: fixed;
   opacity: 0.3;
   top: -8rem;
 }
@@ -63,7 +63,7 @@ body {
 .background-2 {
   position: absolute;
   opacity: 0.2;
-  bottom: -50px;
+  bottom: -100px;
 }
 .theme-compiled {
   --color-primary: #7d7aff;
@@ -133,11 +133,12 @@ nav {
 }
 nav > a {
   text-decoration: underline #ffffff00;
-  text-underline-offset: 0px;
+  text-underline-offset: 3px;
   color: #06958c;
   font-size: 16px;
   animation-duration: 450ms;
   margin-left: 1rem; 
+  transition: text-decoration .2s;
 }
 nav > a:hover {
     text-decoration: underline #09947885;
@@ -208,4 +209,16 @@ nav > a:hover {
 }
 p {
   font-size: larger;
+}
+.link {
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.link:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
