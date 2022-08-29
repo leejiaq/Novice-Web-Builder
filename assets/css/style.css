@@ -209,6 +209,7 @@ nav > a:hover {
 }
 p {
   font-size: larger;
+  font-weight: 500;
 }
 .link {
   padding: 50px;
