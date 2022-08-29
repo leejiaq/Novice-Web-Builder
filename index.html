@@ -13,95 +13,130 @@
     }
   </style>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("open").style.marginLeft = "250px";
+      document.getElementById("close").style.display = "block";
+      document.getElementById("close").style.marginLeft = "250px";
+      document.getElementById("open").style.display = "none";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.getElementById("open").style.marginLeft = "0";
+      document.getElementById("open").style.display = "block";
+      document.getElementById("close").style.display = "none";
+    }
+  </script>
 </head>
 
 <body style="background-image: url(assets/images/blur-background.jpg)">
-  <nav>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#pengenalan">Pengenalan</a>
-  </nav>
-  <a href="#"><button class="top">Back To Top</button></a>
-  <h1 id="pengenalan">Pengenalan</h1>
-  <p>Ping-pong,juga dipanggil sebagai "tenis meja"merupakan sejenis sukan dan
-    permainan yang popular terutamanya di Asia Timur.
-  </p>
-  <img src="assets/images/ping-pong-racket-with-a-ball.webp" alt="" class="below-heading" style="z-index: 10!important;" />
-  <p style="margin-top: 5; font-size: 15px; font-weight: 300">Image credit: Lisa Keffer on Unsplash</p>
-  <h1>Peralatan</h1>
-  <p>Permainan ini memerlukan meja, bola dan bet. </p>
-  <div class="image-hotspot">
-    <img src="assets/images/ping-pong-racket-with-a-ball.webp" alt="" class="below-heading" width="100%"
-      height="auto" />
+    <a href="#kedudukan">Kedudukan Ping Pong</a>
   </div>
-  <h1>Kedudukan dunia ping pong
-    <span style="font-size: 15px">(Kemaskini terakhir pada 12/8/2022)</span>
-  </h1>
-  <table class="ranking">
-    <thead>
-      <tr>
-        <th width="10%">Kedudukan</th>
-        <th width="40%">Negara</th>
-        <th width="50%">Nama</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="active-row">
-        <td>1</td>
-        <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
-          China</td>
-        <td>FAN Zhendong</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
-          China</td>
-        <td>XU Xin</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
-          China</td>
-        <td>MA Long</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
-          China</td>
-        <td>LIN Gaoyuan</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td><img src="assets/images/japan.png" alt="" width="20px" height="auto" />
-          Japan</td>
-        <td>HARIMOTO Tomokazu</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td><img src="assets/images/brazil.png" width="20px" height="auto" />
-          Brazil</td>
-        <td>CALDERANO Hugo</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <div id="main">
+    <nav>
+      <a href="#pengenalan">Pengenalan</a>
+      <a href="#kedudukan">Kedudukan Ping Pong</a>
+    </nav>
+    <span
+      style="font-size:30px;cursor:pointer;position:fixed;top: 50%;left: 4%;transition: margin-left .5s; bottom: 50%; transform: translate(-50%, -50%)"
+      id="open" onclick="openNav()">&#9776;open</span>
+          <span
+            style="font-size:30px;cursor:pointer;position:fixed;top: 50%;left: 4%;transition: margin-left .5s; bottom: 50%; transform: translate(-50%, -50%); display: none;font-size: 36px;"
+            id="close" onclick="closeNav()">&times;</span>
+    <a href="#"><button class="top">Back To Top</button></a>
+    <h1 id="pengenalan">Pengenalan</h1>
+    <p>Ping-pong,juga dipanggil sebagai "tenis meja"merupakan sejenis sukan dan
+      permainan yang popular terutamanya di Asia Timur.
+    </p>
+    <img src="assets/images/ping-pong-racket-with-a-ball.webp" alt="" class="below-heading"
+      style="z-index: 10!important;" />
+    <p style="margin-top: 5; font-size: 15px; font-weight: 300">Image credit: Lisa Keffer on Unsplash</p>
+    <h1>Peralatan</h1>
+    <p>Permainan ini memerlukan meja, bola dan bet. </p>
+    <div class="image-hotspot">
+      <img src="assets/images/ping-pong-racket-with-a-ball.webp" alt="" class="below-heading" width="100%"
+        height="auto" />
+    </div>
+    <h1 id="kedudukan">Kedudukan dunia ping pong
+      <span style="font-size: 15px">(Kemaskini terakhir pada 12/8/2022)</span>
+    </h1>
+    <table class="ranking">
+      <thead>
+        <tr>
+          <th width="10%">Kedudukan</th>
+          <th width="40%">Negara</th>
+          <th width="50%">Nama</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active-row">
+          <td>1</td>
+          <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+            China</td>
+          <td>FAN Zhendong</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+            China</td>
+          <td>XU Xin</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+            China</td>
+          <td>MA Long</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+            China</td>
+          <td>LIN Gaoyuan</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><img src="assets/images/japan.png" alt="" width="20px" height="auto" />
+            Japan</td>
+          <td>HARIMOTO Tomokazu</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><img src="assets/images/brazil.png" width="20px" height="auto" />
+            Brazil</td>
+          <td>CALDERANO Hugo</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
   <!-- <div class="background background-1"></div>
     <div class="background-2 background-3"></div> -->
 </body>
