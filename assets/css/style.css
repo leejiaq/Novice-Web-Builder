@@ -107,6 +107,7 @@ h1 {
 
 .ranking tbody tr {
   border-bottom: 1px solid #dddddd;
+  text-align: left;
 }
 
 .ranking tbody tr:nth-of-type(even) {
@@ -142,7 +143,7 @@ nav > a:hover {
     text-decoration: underline #09947885;
     text-underline-offset: 3px;
 }
-#pengenalan, #kedudukan {
+#pengenalan, #kedudukan, #peralatan {
   scroll-margin: 20px;
 }
 .top {
@@ -151,9 +152,10 @@ nav > a:hover {
   border-radius: 100%;
   position: fixed;
   bottom: 10px;
-  right: 140px;
+  right: 200px;
   cursor: pointer;
   z-index: 9!important;
+  background-image: linear-gradient(90deg,#6cf575,#3ddc94);
 }
 .sidenav {
   height: 100%;
@@ -197,4 +199,13 @@ nav > a:hover {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+p {
+  font-size: larger;
 }

@@ -1,0 +1,72 @@
+<html lang="en" class="theme-compiled">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peralatan - Ping Pong - Satu daripada 24 sukan yang dipertandingkan</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap");
+
+        html {
+            font-family: "M PLUS Rounded 1c";
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("open").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("open").style.marginLeft = "0";
+            document.getElementById("open").style.display = "block";
+            document.getElementById("close").style.display = "none";
+        }
+    </script>
+</head>
+
+<body style="background-image: url(assets/images/blur-background.jpg)">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html#pengenalan">Pengenalan</a>
+        <a href="/index.html#kedudukan">Ranking Global </a>
+        <a href="#">Peralatan</a>
+    </div>
+
+    <div id="main">
+        <nav>
+            <a href="/index.html#pengenalan">Pengenalan</a>
+            <a href="/index.html#kedudukan">Ranking Global </a>
+            <a href="#">Peralatan</a>
+        </nav>
+        <span
+            style="font-size:30px;cursor:pointer;position:fixed;top: 50%;left: 4%;transition: margin-left .5s; bottom: 50%; transform: translate(-50%, -50%)"
+            id="open" onclick="openNav()">&#9776;</span>
+        <div class="grid-container" style="margin-top: 20px;">
+            <div style="margin-top: 10px;">
+                <h1 id="peralatan">Peralatan</h1>
+                <p>Permainan ini memerlukan meja, bola dan bet.</p>
+            </div>
+            <div class="image-hotspot">
+                <img src="assets/images/peralatan.jpg" alt="" class="below-heading" width="100%" height="auto" />
+            </div>
+        </div>
+        <div class="grid-container" style="margin-top: 20px;">
+            <div class="image-hotspot">
+                <img src="assets/images/meja.jpg" alt="" class="below-heading" width="100%" height="auto"
+                    style="margin-top: 50px;" />
+            </div>
+
+            <div style="margin-top: 10px;">
+                <p id="peralatan" style="margin-top: 150px; position: relative;">Contoh Meja Ping Pong</p>
+                <p></p>
+            </div>
+        </div>
+</body>
+
+</html>
