@@ -89,7 +89,7 @@ h1 {
 .ranking {
   border-collapse: collapse;
   margin: 25px 0;
-  min-width: 400px;
+  min-width: 600px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -142,6 +142,8 @@ nav > a {
   animation-duration: 450ms;
   margin-left: 1rem; 
   transition: text-decoration .2s;
+  margin-top: 10rem;
+  line-height: 40px;
 }
 nav > a:hover {
     text-decoration: underline #09947885;
@@ -205,11 +207,14 @@ nav > a:hover {
   .sidenav a {font-size: 18px;}
 }
 .grid-container {
-  display: grid;
-  column-gap: 50px;
-  grid-template-columns: 50% 50%;
-  padding: 10px;
+    margin-top: 20px;
+    border-bottom: 3px;
 }
+.grid-container > div {
+    border-bottom: 2px solid #0C6B58;
+    padding-bottom: 20px;
+    margin-top: 70px;
+  }
 p {
   font-size: larger;
   font-weight: 500;
@@ -226,6 +231,20 @@ p {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
 }
-.grid-container > div {
-  margin-top: 70px;
+
+table {
+  overflow: scroll;
+}
+@media screen and (min-height: 765px) {
+    .grid-container {
+      display: grid;
+      column-gap: 50px;
+      grid-template-columns: 40% 50%;
+      padding: 10px;
+      border-bottom: 2px solid #0C6B58;
+      padding-bottom: 20px;
+    }
+    .grid-container > div {
+      border-bottom: 0;
+    }
 }
