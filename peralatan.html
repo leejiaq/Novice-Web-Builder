@@ -24,15 +24,15 @@
     </script>
 </head>
 
-<body>
+<body style="position: relative;">
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="#pengenalan">Pengenalan</a>
-            <a href="#kedudukan">Ranking Global </a>
-            <a href="/peralatan.html">Peralatan</a>
-            <a href="/peraturan.html">Peraturan</a>
-            <a href="/kemahiran.html">Kemahiran</a>
+            <a href="/index.html#pengenalan" onclick="closeNav()">Pengenalan</a>
+            <a href="/index.html#kedudukan" onclick="closeNav()">Ranking Global </a>
+            <a href="#" style="color:#D9E2EC" onclick="closeNav()">Peralatan</a>
+            <a href="/peraturan.html" onclick="closeNav()">Peraturan</a>
+            <a href="/kemahiran.html" onclick="closeNav()">Kemahiran</a>
         </div>
     </div>
     <div id="main">
@@ -48,22 +48,22 @@
             id="open" onclick="openNav()">&#9776;</span>
         <a href="#"><button class="top">Back To Top</button></a>
         <div class="grid-container" style="margin-top: 20px;">
-            <div style="margin-top: 10px;">
+            <te style="margin-top: 10px;">
                 <h1 id="peralatan">Peralatan</h1>
                 <p>Permainan ini memerlukan meja, bola dan bet.</p>
-            </div>
+            </te>
             <div class="image-hotspot">
                 <img src="assets/images/peralatan.jpg" alt="" class="below-heading" width="100%" height="auto" />
             </div>
         </div>
-        <div class="grid-container" style="margin-top: 20px;">
-            <div class="image-hotspot">
+        <div class="grid-container" style="margin-top: 20px; flex-direction: column-reverse;">
+            <te class="image-hotspot">
                 <img src="assets/images/meja.jpg" alt="" class="below-heading" width="100%" height="auto"
                     style="margin-top: 50px;" />
-            </div>
+            </te>
 
             <div style="margin-top: 10px;">
-                <p id="peralatan" style="margin-top: 150px; position: relative;">Contoh Meja Ping Pong</p>
+                <p id="peralatan-meja" style="position: relative;">Contoh Meja Ping Pong</p>
                 <p></p>
             </div>
         </div>
