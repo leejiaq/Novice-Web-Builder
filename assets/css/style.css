@@ -144,7 +144,7 @@ nav > a {
   margin-left: 1rem; 
   transition: text-decoration .2s;
   margin-top: 2rem;
-  line-height: 0px;
+  line-height: 40px;
 }
 nav > a:hover {
     text-decoration: underline #09947885;
@@ -311,6 +311,8 @@ table {
   padding-left: 1rem;
   padding-right: 2rem;
   display: block;
+  line-height: 20px;
+  margin-top: 20px;
     }
     .overflow > a {
        color: white;
@@ -371,4 +373,11 @@ td:hover .imgHover {
 }
 td:focus .imgHover{
   display: block;
+}
+.head {
+  text-decoration: none;
+  color: black;
+}
+.head:hover {
+  text-decoration: underline;
 }
