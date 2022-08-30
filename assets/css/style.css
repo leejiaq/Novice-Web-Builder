@@ -257,7 +257,7 @@ nav > a:hover {
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px; color: white;}
+  .sidenav a {font-size: 18px;}
 }
 .grid-container {
     margin-top: 20px;
@@ -311,5 +311,8 @@ table {
   padding-left: 1rem;
   padding-right: 2rem;
   display: block;
+    }
+    .overflow > a {
+       color: white;
     }
 }
