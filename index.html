@@ -12,6 +12,7 @@
       font-family: "M PLUS Rounded 1c";
     }
   </style>
+  <script src="ranking.js"></script>
   <link rel="stylesheet" href="assets/css/style.css" />
   <script>
     function openNav() {
@@ -22,8 +23,6 @@
       document.getElementById("myNav").style.width = "0%";
     }
   </script>
-  <script src="https://bootcamp.natureflora.co/js/min/jquery.min.js"></script>
-  <script id="sbinit" src="https://bootcamp.natureflora.co/js/main.js"></script>
 </head>
 
 <body>
@@ -31,10 +30,16 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
       <a href="#pengenalan" onclick="closeNav()">Pengenalan</a>
-      <a href="#kedudukan" onclick="closeNav()">Ranking Global </a>
+      <a href="#kedudukan" onclick="closeNav()">Ranking Global Perserorangan Lelaki</a>
       <a href="peralatan.html" onclick="closeNav()">Peralatan</a>
       <a href="/peraturan.html" onclick="closeNav()">Peraturan</a>
       <a href="/kemahiran.html" onclick="closeNav()">Kemahiran</a>
+    </div>
+  </div>
+  <div id="Fan" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeFan()">&times;</a>
+    <div class="overlay-content">
+      <img src="assets/images/Fan.jpg" alt="">
     </div>
   </div>
 
@@ -42,7 +47,7 @@
     <h1 style="font-size: 50px">Ping Pong</h1>
     <nav>
       <a href="#pengenalan">Pengenalan</a>
-      <a href="#kedudukan">Ranking Global </a>
+      <a href="#kedudukan">Ranking Global Perserorangan Lelaki</a>
       <a href="peralatan.html">Peralatan</a>
       <a href="/peraturan.html">Peraturan</a>
       <a href="/kemahiran.html">Kemahiran</a>
@@ -61,7 +66,7 @@
       style="z-index: 10!important;" />
     <p style="margin-top: 5; font-size: 15px; font-weight: 300">Image credit: Lisa Keffer on Unsplash</p>
 
-    <h1 id="kedudukan">Ranking Global
+    <h1 id="kedudukan">Ranking Global Perserorangan Lelaki<br>
       <span style="font-size: 15px">(Kemaskini terakhir pada 12/8/2022)</span>
     </h1>
     <div style="overflow-x:auto;">
@@ -78,25 +83,26 @@
             <td>1</td>
             <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
               China</td>
-            <td>FAN Zhendong</td>
+            <td><a onclick="">FAN Zhendong</a><img src="assets/images/Fan.jpg" alt="" class="imgHover" loading="lazy">
+            </td>
           </tr>
           <tr>
             <td>2</td>
             <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
               China</td>
-            <td>XU Xin</td>
+            <td>MA Long <img src="assets/images/malong.jpg" alt="" class="imgHover" loading="lazy" width="100%"></td>
           </tr>
           <tr>
             <td>3</td>
             <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
               China</td>
-            <td>MA Long</td>
+            <td>LIANG Jingkun <img src="assets/images/malong.jpg" alt="" class="imgHover" loading="lazy" width="100%"></td>
           </tr>
           <tr>
             <td>4</td>
-            <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
-              China</td>
-            <td>LIN Gaoyuan</td>
+            <td><img src="assets/images/brazil.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+              Brazil</td>
+            <td>CALDERANO Hugo <img src="assets/images/malong.jpg" alt="" class="imgHover" loading="lazy" width="100%"></td>
           </tr>
           <tr>
             <td>5</td>
@@ -106,39 +112,117 @@
           </tr>
           <tr>
             <td>6</td>
-            <td><img src="assets/images/brazil.png" style="margin-left: 10px" width="20px" height="auto" />
-              Brazil</td>
-            <td>CALDERANO Hugo</td>
+            <td><img src="assets/images/taipei.png" style="margin-left: 10px" width="20px" height="auto" />
+              Taipei</td>
+            <td>LIN Yun-ju</td>
           </tr>
           <tr>
             <td>7</td>
-            <td><img src="assets/images/taipei.png" alt="" style="margin-left: 10px" width="auto" height="20px"> Taipei
+            <td><img src="assets/images/german.png" alt="" style="margin-left: 10px" width="auto" height="20px"> German
             </td>
-            <td>LIN Yun-Ju</td>
+            <td>OVTCHAROV Dimitrij</td>
           </tr>
           <tr>
             <td>8</td>
-            <td><img src="assets/images/sweden.png" alt="" style="margin-left: 10px" width="20px" height="auto"> Sweden
+            <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto"> China
             </td>
-            <td>FALCK Mattias</td>
+            <td>XU Xin</td>
           </tr>
           <tr>
             <td>9</td>
-            <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto"> China
-            </td>
-            <td>LIANG Jingkuns</td>
-          </tr>
-          <tr>
-            <td>10</td>
             <td><img src="assets/images/german.png" alt="" style="margin-left: 10px" width="20px" height="auto"> German
             </td>
             <td>BOLL Timo</td>
           </tr>
+          <tr>
+            <td>10</td>
+            <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto"> China
+            </td>
+            <td>LIN Gaoyuan</td>
+          </tr>
 
         </tbody>
       </table>
+      <h1 id="kedudukan">Ranking Global Perserorangan Perempuan<br>
+        <span style="font-size: 15px">(Kemaskini terakhir pada 12/8/2022)</span>
+        <table class="rankings">
+          <thead>
+            <tr>
+              <th width="10%">Kedudukan</th>
+              <th width="40%">Negara</th>
+              <th width="50%">Nama</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="active-row">
+              <td>1</td>
+              <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+                China</td>
+              <td>CHEN Meng</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+                China</td>
+              <td>SUN Yingsha</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+                China</td>
+              <td>WANG Manyu</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><img src="assets/images/japan.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+                Japan</td>
+              <td>ITO Mima</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><img src="assets/images/china.png" alt="" style="margin-left: 10px" width="20px" height="auto" />
+                China</td>
+              <td>WANG Yidi</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><img src="assets/images/japan.png" style="margin-left: 10px" width="20px" height="auto" />
+                Japan</td>
+              <td>HAYATA Hina</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><img src="assets/images/japan.png" alt="" style="margin-left: 10px" width="auto" height="20px">
+                Japan
+              </td>
+              <td>ISHIKAWA Kasumi</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><img src="assets/images/hong-kong.png" alt="" style="margin-left: 10px" width="20px" height="auto">
+                Hong Kong
+              </td>
+              <td>DOO Hoi Kem</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><img src="assets/images/puerto.png" alt="" style="margin-left: 10px" width="20px" height="auto">
+                Puerto Rico
+              </td>
+              <td>Adriana Díaz</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><img src="assets/images/singapore.png" alt="" style="margin-left: 10px" width="20px" height="auto">
+                Singapore
+              </td>
+              <td>FENG Tianwei</td>
+            </tr>
+
+          </tbody>
+        </table>
     </div>
-    <p style="margin-top: -20px; font-size: 15px; font-weight:300">Source: ITTF</p>
+    <p style="margin-top: 0px; font-size: 15px; font-weight:300">Source: ITTF</p>
   </div>
   <div class="background background-1"></div>
   <div class="background-2 background-3"></div>

@@ -320,3 +320,57 @@ table {
       margin-top: 150px;
     }
 }
+.rankings {
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 600px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.rankings thead tr {
+  background-color: #724BB7;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.rankings th,
+.rankings td {
+  padding: 12px 15px;
+}
+
+.rankings tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+}
+
+.rankings tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.rankings tbody tr:last-of-type {
+  border-bottom: 2px solid #724BB7;
+}
+
+.rankings tbody tr.active-row {
+  font-weight: bold;
+  color: #724BB7;
+}
+.imgHover {
+  position:absolute;
+  display: none;
+  transition: display .5s;
+  z-index: 1;
+}
+td {
+  position: relative;
+}
+td:hover .imgHover {
+  display: block;
+}
+td:focus .imgHover{
+  display: block;
+}
