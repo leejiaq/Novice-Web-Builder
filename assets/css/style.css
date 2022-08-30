@@ -126,8 +126,10 @@ h1 {
   color: #009879;
 }
 nav {
+display: flex;
+flex-direction: column;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   width: full;
   background-color: white;
   border-radius: 20px;
@@ -142,8 +144,8 @@ nav > a {
   animation-duration: 450ms;
   margin-left: 1rem; 
   transition: text-decoration .2s;
-  margin-top: 10rem;
-  line-height: 40px;
+  margin-top: 2rem;
+  line-height: 0px;
 }
 nav > a:hover {
     text-decoration: underline #09947885;
@@ -162,7 +164,7 @@ nav > a:hover {
   cursor: pointer;
   z-index: 9!important;
   background-image: linear-gradient(90deg,#6cf575,#3ddc94);
-}
+}/*
 .sidenav {
   height: 100%;
   width: 0;
@@ -195,8 +197,59 @@ nav > a:hover {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-
+}*/
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 11;
+      top: 0;
+      left: 0;
+  background-image: linear-gradient(120deg, rgb(98, 125, 152, 0.9), rgb(51, 78, 104, 0.9));
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+  
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #9FB3C8;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+  
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+  
+    @media screen and (max-height: 450px) {
+      .overlay a {
+        font-size: 20px
+      }
+  
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
 #main {
   transition: margin-left .5s;
   padding: 16px;
@@ -204,16 +257,18 @@ nav > a:hover {
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 18px; color: white;}
 }
 .grid-container {
     margin-top: 20px;
     border-bottom: 3px;
+    position: relative
 }
 .grid-container > div {
     border-bottom: 2px solid #0C6B58;
     padding-bottom: 20px;
-    margin-top: 70px;
+    margin-top: 40px;
+    font-size: x-large;
   }
 p {
   font-size: larger;
@@ -235,16 +290,26 @@ p {
 table {
   overflow: scroll;
 }
-@media screen and (min-height: 765px) {
+@media screen and (min-width: 768px) {
     .grid-container {
       display: grid;
       column-gap: 50px;
-      grid-template-columns: 40% 50%;
+      grid-template-columns: 60% 40%;
       padding: 10px;
       border-bottom: 2px solid #0C6B58;
-      padding-bottom: 20px;
+      padding-bottom: 2rem;
     }
     .grid-container > div {
       border-bottom: 0;
+    }
+    nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: full;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  display: block;
     }
 }
